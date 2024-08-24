@@ -6,10 +6,9 @@
     android:layout_margin="10dp">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/img_place_photo"
-        android:src="@drawable/ic_launcher_background"/>
+        android:src="@drawable/ic_launcher_background"
+        style="@style/PlaceImageStyle" />
 
 
     <TextView
@@ -19,7 +18,8 @@
         android:layout_marginLeft="15dp"
         android:textSize="20dp"
         android:id="@+id/txt_place_name"
-        android:text="Um lugar qualquer" />
+        android:text="Um lugar qualquer"
+        style="@style/PlaceNameText"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -27,7 +27,8 @@
         android:layout_alignLeft="@id/txt_place_name"
         android:layout_below="@id/txt_place_name"
         android:id="@+id/txt_place_description"
-        android:text="Este é um lugar qualquer que serve alguma coisa" />
+        android:text="Este é um lugar qualquer que serve alguma coisa"
+        style="@style/PlaceDescriptionText"/>
 
     <RatingBar
         android:layout_width="wrap_content"
@@ -39,7 +40,8 @@
         android:isIndicator="true"
         android:numStars="5"
         android:rating="3"
-        android:stepSize="0.5" />
+        android:stepSize="0.5"
+        android:id="@+id/place_rating" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -47,5 +49,6 @@
         android:layout_alignParentRight="true"
         android:layout_alignBottom="@id/img_place_photo"
         android:id="@+id/txt_place_distance"
-        android:text="0.4 KM" />
+        android:text="0.4 KM"
+        style="@style/PlaceDistanceText"/>
 </RelativeLayout>
